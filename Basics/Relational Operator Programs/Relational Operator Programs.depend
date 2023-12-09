@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702119913 source:f:\c++\basics\relational operator programs\main.cpp
+	<iostream>
+	<limits>
+
