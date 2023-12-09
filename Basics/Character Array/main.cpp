@@ -18,4 +18,5 @@ int main()
     cin.getline(n,a);  // Read Until Newline Character or Null Character'
 
     cout  << n << endl;
+
 }
