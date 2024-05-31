@@ -38,5 +38,5 @@ int main()
     //cout << "please enter b " ;
 //    cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cin >> b;
-    cout << b << endl;
+    cout << b << endl; //cin is in fail state that means b is uninitialized and then it will show 0 as an output
 }

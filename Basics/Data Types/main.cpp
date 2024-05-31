@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 
 using namespace std;
 
@@ -16,6 +17,8 @@ int main()
 
     char ch = 'a';
     cout << ch << endl;
+
+    cout << typeid(d).name() << endl;
 
 
 }

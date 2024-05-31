@@ -20,6 +20,13 @@ int main()
 
 
 
+//    char n;
+//    cin >> n;
+//    cout << int(n);
+
+
+
+
 
 //    char ch;
 //    cout << "Enter a character: ";
@@ -39,32 +46,33 @@ int main()
 
 
 
-    char ch;
-    cout << "Enter a character: ";
-    cin >> ch;
-
-    if((ch >='0' && ch <= '9') || (ch=='-'))
-    {
-        cout << "Digit" << endl;
-    }
-    else if((ch >='a' && ch <= 'z') || (ch >='A' && ch <= 'Z') )
-    {
-        cout << "Alphabet" << endl;
-    }
-    else{
-        cout << "Special Character" << endl;
-    }
-
 
 //    char ch;
 //    cout << "Enter a character: ";
 //    cin >> ch;
 //
-//    if (isalpha(ch)) {
-//        cout << ch << " is an alphabet." << endl;
-//    } else {
-//        cout << ch << " is not an alphabet." << endl;
+//    if((ch >='0' && ch <= '9') || (ch=='-'))
+//    {
+//        cout << "Digit" << endl;
 //    }
+//    else if((ch >='a' && ch <= 'z') || (ch >='A' && ch <= 'Z') )
+//    {
+//        cout << "Alphabet" << endl;
+//    }
+//    else{
+//        cout << "Special Character" << endl;
+//    }
+
+
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+
+    if (isalpha(ch)) {
+        cout << ch << " is an alphabet." << endl;
+    } else {
+        cout << ch << " is not an alphabet." << endl;
+    }
 
 
     return main();

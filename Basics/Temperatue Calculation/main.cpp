@@ -14,4 +14,7 @@ int main()
     f = (1.8*c + 32);
 
     cout << c << " degree Celcius = " << f << " degree Farenhite " << endl;
+
+
+
 }

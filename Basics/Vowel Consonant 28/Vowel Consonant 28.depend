@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1702131600 source:f:\c++\basics\vowel consonant 28\main.cpp
+1716929536 source:f:\c++\basics\vowel consonant 28\main.cpp
 	<iostream>
+	<cctype>
 

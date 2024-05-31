@@ -37,6 +37,5 @@ int main()
     cout << fixed;
     cout << setprecision(7);
 //    cout << fixed; // same thing . just need to write before printing the value
-    cout << f2 << endl;
-
+    cout << f2 << endl; //total 7 number
 }

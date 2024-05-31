@@ -11,6 +11,7 @@ int main()
     cout << "Please enter the size of a character array : ";
     cin >> a;
 
+    cin.clear();
     cin.ignore(); // Ignoring New Line Character;
 
     char n [a];
@@ -18,5 +19,7 @@ int main()
     cin.getline(n,a);  // Read Until Newline Character or Null Character'
 
     cout  << n << endl;
+
+
 
 }
