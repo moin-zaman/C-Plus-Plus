@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1717486196 source:f:\c++\class\classbasics\constant\const_objects\constobjectclass.cpp
+	"constobjectclass.h"
+	<iostream>
+
+1717486158 f:\c++\class\classbasics\constant\const_objects\constobjectclass.h
+

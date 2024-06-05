@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1717466439 source:f:\c++\function\string_char_input\main.cpp
+	<iostream>
+	<stdio.h>
+

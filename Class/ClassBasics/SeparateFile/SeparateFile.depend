@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1717479726 source:f:\c++\class\classbasics\separatefile\main.cpp
+	<iostream>
+	"separatefileclass.h"
+
+1717479732 f:\c++\class\classbasics\separatefile\separatefileclass.h
+
+1717479697 source:f:\c++\class\classbasics\separatefile\separatefileclass.cpp
+	"separatefileclass.h"
+	<iostream>
+
