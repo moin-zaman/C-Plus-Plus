@@ -1,16 +1,19 @@
 #include <iostream>
+#include <cstring>
+
 
 using namespace std;
 
 int main()
 {
+
 //    int a[2][2];
 //    a[0[0] = 1;
 //    a[0[1] = 2;
 //    a[1[0] = 3;
 //    a[1[1] = 4;
-
-
+//
+//
 //    int A[3][4] = {
 //
 //        {1,2,3,4},
@@ -20,29 +23,37 @@ int main()
 //
 //    };
 
+    int x, y;
+    cout << "Enter the Size of the row and column of 2D Array : ";
+    cin >> x >> y;
 
-    int a,b;
-    cout << "Please enter the size of row and column in 2D array : ";
-    cin >> a >> b;
-    int A[a][b];
+    int arr[x][y];
 
-    for(int i = 0; i < a; i++)
+    for(int i = 0; i < x; i++)
     {
-        for(int j = 0; j < b; j++)
+        for(int j = 0; j < y; j++)
         {
-            cout << "A[" << i << "][" << j <<"] : " ;
-            cin >> A[i][j];
+            cout << "arr[" << i << "][" << j << "] = ";
+            cin >> arr[i][j];
         }
     }
 
+    cout << "Elements of 2D Array" << endl;
 
-    for(int i = 0; i < 3; i++)
+    cout << "arr[" << x << "][" << y << "] = {";
+
+    for(int i = 0; i < x; i++)
     {
-        for(int j = 0; j < 4; j++)
+        cout << "{ ";
+
+        for(int j = 0; j < y; j++)
         {
-            cout << A[i][j] << " ";
+            cout << arr[i][j] << " ";
         }
-        cout << endl;
+        cout << "}," << endl;;
     }
+    cout << "}";
+
+
 
 }
