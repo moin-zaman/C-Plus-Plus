@@ -1,0 +1,54 @@
+#
+#include <iostream>
+#include<stdlib.h>
+#include<stdio.h>
+
+
+using namespace std;
+
+int add(int *a, int size)
+{
+    int sum = 0;
+    for(int i = 0; i < 5; i++)
+    {
+        sum += a[i];
+    }
+    return sum;
+}
+
+int main()
+{
+    int a[5] = {2, 5, 1, 9, 4};
+
+    int result = add(a, 5);
+    cout << result << endl;
+
+}
+
+
+C++ এ array function এ পাঠালে, array decay হয়ে pointer এ পরিণত হয়।
+মানে arr নামটা আসলে &arr[0] → প্রথম element এর address হয়ে যায়।
+
+Example with pointer notation:
+
+int add(int *a, int size) {
+    int sum = 0;
+    for(int i = 0; i < size; i++) {
+        sum += *(a + i); // pointer arithmetic দিয়ে element access
+    }
+    return sum;
+}
+
+Example with array notation:
+
+int add(int a[], int size) {
+    int sum = 0;
+    for(int i = 0; i < size; i++) {
+        sum += a[i]; // array indexing দিয়ে access
+    }
+    return sum;
+}
+
+
+function এর ভিতরে a হলো pointer variable, যেটা arr array এর প্রথম element এর address store করে।
+আর a[i] আর *(a+i) — দুটো একদম সমান কাজ করে।
