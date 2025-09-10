@@ -1,0 +1,44 @@
+int a[5] = {4,3,6,2,8};
+
+here,
+
+cout << a << endl;
+cout << &a << endl;
+
+**
+যখন array a কে cout এ পাঠাও, তখন array decay হয়ে pointer এ পরিণত হয়।
+তাই a এর মান আসলে → &a[0] (প্রথম element এর address)।
+
+&a মানে পুরো array এর address।
+যেহেতু পুরো array মেমরিতে শুরু হচ্ছে প্রথম element এর জায়গা থেকেই, তাই &a আর &a[0] দেখতে একই রকম address হয়।
+
+
+যদিও output এক রকম লাগে, a আর &a আলাদা type:
+
+a → type হলো int* (pointer to first element)।
+
+&a → type হলো int (*)[5] (pointer to an array of 5 ints)।
+
+
+মানে:
+a + 1 → next element (&a[1]) এ চলে যাবে।
+
+&a + 1 → পুরো array skip করে পরের 5 integer এর block এ চলে যাবে।
+
+**
+
+
+
+
+**
+cout << &a[0] << endl;  ==  cout << a << endl;
+
+**
+
+
+**
+     cout  <<  a+1 <<  endl; ==  cout << &a[1] << endl == cout  <<  &a[0+1];
+
+**
+
+
