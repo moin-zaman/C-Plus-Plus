@@ -1,0 +1,36 @@
+** character array কেই string বলা হয়। . **
+ex : 
+
+i) char name[5] = "Moin";
+ii) string name = "Moin"; 
+Here both are same
+
+**character input নেওয়ার way:**
+
+I) char ch;
+cin >> ch;
+
+**string input নেওয়ার way: ** 
+string name;
+cin >> name;
+কিন্তু এভাবে নিলে শুধু space এর আগ পর্যন্ত input নেবে, কিন্তু space এর পরের character গুলো নেবে না।
+
+so better approach :
+getline(cin, name);
+
+
+** character array (বা character array string) input নেওয়ার way:
+
+int s;
+cout << "Enter the size of a character array : ";
+cin >> s;
+cin.ignore(); 
+C++ এ যখন character array বা character input নেওয়ার আগে integer বা অন্য কোনো input নিই, তখন input buffer এ একটা newline character ('\n') থেকে যায়।
+
+char name[s];
+cin.getline(name, s);
+
+
+
+
+ 
